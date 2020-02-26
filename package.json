@@ -1,0 +1,17 @@
+{
+  "name": "web3-erc20",
+  "version": "1.0.0",
+  "description": "Test sample web3js ",
+  "main": "index.js",
+  "scripts": {
+    "server": "node src/init-server.js",
+    "listen": "node src/listen.js",
+    "send": "node src/send.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ganache-cli": "^6.9.1",
+    "web3": "^1.2.6"
+  }
+}
