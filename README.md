@@ -7,18 +7,18 @@ This example uses:
 
 
 We are going to use 3 terminals:
-1. terminal for starting blockchain command line version of Ganache -> `genache-cli`. Here we emit 3 `BasicEvent`s and create subscription `fromBlock: 0`
-2. terminal for listener on `BasicEvents`s as subscription `fromBlock: 0`
-3. terminal for sending new `BasicEvent`
 
 ### terminal 1 
-open terminal #1 and start `ganache-cli` which is listening on port `7545`
+open terminal #1 and start `ganache-cli` which is listening on port `7545`. 
+this part starts blockchain command line version of Ganache -> `genache-cli`. Here we emit 3 `BasicEvent`s and create subscription `fromBlock: 0`. It works correctly!
+
 ```
 npm run server
 ```
 
 ### terminal 2 
-open terminal #2 and start listener
+open terminal #2 and start listener.
+This part is listening for `BasicEvents` via subscription and with `fromBlock: 0`
 ```
 npm run listen
 ```
@@ -26,7 +26,7 @@ npm run listen
 
 ### terminal 3
 open terminal #3 and fire a new BasicEvent
-
+just for sending new `BasicEvent` nothing else
 ```
 npm run send
 ```
