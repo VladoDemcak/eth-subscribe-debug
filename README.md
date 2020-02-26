@@ -6,26 +6,26 @@ This example uses:
 - web3js subscription for `BasicEvent` events
 
 
-We are going to use 3 consoles:
-1. console for starting blockchain command line version of Ganache -> `genache-cli`. Here we emit 3 `BasicEvent`s and create subscription `fromBlock: 0`
-2. console for listener on `BasicEvents`s as subscription `fromBlock: 0`
-3. console for sending new `BasicEvent`
+We are going to use 3 terminals:
+1. terminal for starting blockchain command line version of Ganache -> `genache-cli`. Here we emit 3 `BasicEvent`s and create subscription `fromBlock: 0`
+2. terminal for listener on `BasicEvents`s as subscription `fromBlock: 0`
+3. terminal for sending new `BasicEvent`
 
-### console 1 
-open console #1 and start `ganache-cli` which is listening on port `7545`
+### terminal 1 
+open terminal #1 and start `ganache-cli` which is listening on port `7545`
 ```
 npm run server
 ```
 
-### console 2 
-open console #2 and start listener
+### terminal 2 
+open terminal #2 and start listener
 ```
 npm run listen
 ```
 
 
-### console 3
-open console #3 and fire a new BasicEvent
+### terminal 3
+open terminal #3 and fire a new BasicEvent
 
 ```
 npm run send
