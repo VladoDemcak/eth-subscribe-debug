@@ -3,7 +3,7 @@ Super simple example to reproduce https://github.com/ethereum/web3.js/issues/338
 This example uses:
 - [Basic](https://github.com/ethereum/web3.js/blob/b7cdb9a7ac4d19bf583790dc7999f396686e5d12/test/sources/Basic.json) smart contract from `web3.js/test/sources/Basic.json`
 - `genache-cli` 
-- web3js subscription for event
+- web3js subscription for `BasicEvent` events
 
 
 We are going to use 3 consoles:
