@@ -11,23 +11,38 @@ We are going to use 3 consoles:
 2. console for listener on `BasicEvents`s as subscription `fromBlock: 0`
 3. console for sending new `BasicEvent`
 
-### console #1 
+### console 1 
 open console #1 and start `ganache-cli` which is listening on port `7545`
 ```
 npm run server
 ```
 
-### console #2 
+### console 2 
 open console #2 and start listener
 ```
 npm run listen
 ```
 
 
-### console #3
+### console 3
 open console #3 and fire a new BasicEvent
+
 ```
 npm run send
 ```
+
+
+## Below is output of this simple app.
+The problem
+![01](https://user-images.githubusercontent.com/5232606/75345779-4f2de280-5895-11ea-81c4-ee594d507f86.png)
+
+sending new events
+![02](https://user-images.githubusercontent.com/5232606/75345788-51903c80-5895-11ea-9bf5-1b690cf061e6.png)
+
+
+When I uncomment getPastEvents in `listen.js`
+![03](https://user-images.githubusercontent.com/5232606/75345793-53f29680-5895-11ea-9e85-01f768c7b616.png)
+ it works correctly.
+![04](https://user-images.githubusercontent.com/5232606/75345796-55bc5a00-5895-11ea-9c39-5aaf7db6b23d.png)
 
 
