@@ -5,6 +5,10 @@ This example uses:
 - `genache-cli` 
 - web3js subscription for `BasicEvent` events
 
+Install 
+```
+npm install
+```
 
 We are going to use 3 terminals:
 
