@@ -17,6 +17,9 @@ const run = async () => {
   // uncomment to fix -> another way how to fix subscription for BasicEvent
   // await contract.methods.firesEvent(addresses.from, 1).send({ from: addresses.from });
 
+  // uncomment to fix -> another way how to fix subscription for BasicEvent 
+  // await web3.eth.getAccounts();
+
   // listener irself
   let eventNum = 0;
   contract.events.BasicEvent({ fromBlock: 0 })
