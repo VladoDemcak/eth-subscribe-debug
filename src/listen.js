@@ -18,7 +18,7 @@ const run = async () => {
   // await contract.methods.firesEvent(addresses.from, 1).send({ from: addresses.from });
 
   // uncomment to fix -> another way how to fix subscription for BasicEvent 
-  // await web3.eth.getAccounts();
+  // await web3.eth.getGasPrice(); // or getAccounts or getBlockNumber
 
   // listener irself
   let eventNum = 0;
@@ -27,7 +27,6 @@ const run = async () => {
       console.log("event #" + eventNum + ", blockNumber: " + event.blockNumber + ", transactionHash: " + event.transactionHash);
       eventNum++;
     });
-
 }
 
 run()
