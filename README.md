@@ -23,6 +23,8 @@ npm run server
 ### terminal 2 
 open terminal #2 and start listener.
 This part is listening for `BasicEvents` via subscription and with `fromBlock: 0`
+
+WS is closed every 3 sec (in ws provider configuration)
 ```
 npm run listen
 ```
@@ -34,31 +36,4 @@ just for sending new `BasicEvent` nothing else
 ```
 npm run send
 ```
-
-
-## Below is output of this simple app.
-The problem
-![01](https://user-images.githubusercontent.com/5232606/75372009-b1034200-58bf-11ea-8407-af0070c6759f.png)
-
-.
-
-.
-
-sending new events
-![02](https://user-images.githubusercontent.com/5232606/75345788-51903c80-5895-11ea-9bf5-1b690cf061e6.png)
-
-.
-
-.
-
-When I uncomment getPastEvents in `listen.js`
-![03](https://user-images.githubusercontent.com/5232606/75345793-53f29680-5895-11ea-9e85-01f768c7b616.png)
-
-.
-
-.
-
- it works correctly.
-![04](https://user-images.githubusercontent.com/5232606/75345796-55bc5a00-5895-11ea-9c39-5aaf7db6b23d.png)
-
 
