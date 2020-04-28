@@ -11,8 +11,8 @@ const run = async () => {
   // fire new event
   const receipt = await contract.methods.firesEvent(addresses.from, 1).send();
 
-  console.log(receipt)
-  console.log("BasicEvent has been sent!")
+  // console.log(receipt)
+  console.log(new Date().toUTCString() + ". BasicEvent has been sent!")
 }
 
 run()

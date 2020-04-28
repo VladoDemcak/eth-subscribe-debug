@@ -43,7 +43,7 @@ const run = async () => {
   let eventNum = 0;
   contract.events.BasicEvent({ fromBlock: 0 })
     .on('data', (event) => {
-      console.log("event #" + eventNum + ", blockNumber: " + event.blockNumber + ", transactionHash: " + event.transactionHash);
+      console.log(new Date().toUTCString() + ". event #" + eventNum + ", blockNumber: " + event.blockNumber + ", transactionHash: " + event.transactionHash);
       eventNum++;
     });
 

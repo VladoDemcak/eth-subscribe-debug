@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "ganache-cli": "^6.9.1",
-    "web3": "^1.2.6"
+    "web3": "^1.2.7"
   }
 }
